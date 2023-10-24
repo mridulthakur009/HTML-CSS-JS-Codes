@@ -1,3 +1,3 @@
 # JavaScript Codes:
 
-# This is the Repository where I will write all the codes that I will do on Daily Basis.
+# This is the Repository where we will write all the codes that are given to us as practice.
