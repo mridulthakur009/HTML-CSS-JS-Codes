@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar{
+
+}
+nav{
+    float: right;
+    margin: 40px 20px 0 0;
+}
+
+.menu a{
+    padding-bottom: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: rgb(21, 10, 112); 
+    font-weight: 700;
+}
+
+nav a:hover {
+    color:blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+
+#signup-button {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    color: blueviolet;
+    border-radius: 4px;
+}
+
+.content{
+    width:100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+.banner {
+    background-image: url(../assets/images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.abc1 { 
+    display: inline-block;
+    border: 2px solid black;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-right: 10px;
+    background-color:black
+}
+
+.abc2{
+    display: inline-block;
+    border: 2px solid blueviolet;
+    padding: 8px 15px;
+    color: blueviolet;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-left: 10px;
+}

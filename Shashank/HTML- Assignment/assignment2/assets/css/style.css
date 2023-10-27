@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding:0 15px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+    margin-top: 14px;
+}
+
+nav a{
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #00ff00;
+}
+
+nav a:active {
+    color: #0000ff;
+}
+
+#banner {
+    background: url(../images/bg-pic.jpg) no-repeat left top;
+    opacity: 0.8;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+#offset {
+    padding: 70px 10px;
+    text-align: center;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+#box1 {
+    background-color: #ff0000;
+}
+
+#box2 {
+    background-color: #00ff00;
+}
+
+#box3 {
+    background-color: #0000ff;
+}
+
+#offset section:nth-child(2) {
+    margin: 0 100px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    line-height: 100px;
+ }
+
+#circle1 {
+    transform: translate(150% ,-50%);
+    background-color: #ffff00;
+ }
+
+ #circle2 {
+    transform: translate(50% , 50%);
+    background-color: #00ffff;
+ }
+
+#circle3 {
+    transform: translate(150%, 150%);
+    background-color: #ff00ff;
+ }
+
+ .circle p {
+    display: block;
+    position: absolute;
+    transform: translate(50% , 50%);
+ }
+
+ #info {
+    text-align: center;
+ }
+
+ .cards {
+    display:inline-block;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+ }
+ 
+ #card1 {
+    width: 30%;
+    border: 1px solid #000;
+ }
+
+ #card2 {
+    width: 60%;
+    border: 1px solid #000;
+ }
+
+ .name {
+    height: 20%;
+    border-bottom: 1px solid #000;
+ }
+
+ .details {
+    height: 50%;
+    padding: 3px 0;
+ }
+
+ .more {
+    height: 30%;
+    border-top: 1px solid #000;
+ }
+
+ .button {
+    font-weight: 700;
+    color: #BD55F4
+ }
+
+ .more a:hover {
+    border-bottom: 2px solid #BD55F4;
+ }
+
+ .button::after {
+    content: "\f061";
+    font-family: font-awesome;
+ }
+
+ h3 {
+    font-size: 18px;
+ }
+
+ p {
+    text-align: center;
+ }
