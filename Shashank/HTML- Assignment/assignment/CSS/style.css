@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+    margin: 10px 0 10px 5px;
+}
+
+.sitelogo {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+    float: right;  
+    margin: auto 0;         
+}
+
+#top {
+    background-color: aqua;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav a {
+    margin: auto 0;
+    padding: 0 10px 0 10px;
+    border: 1px solid black;    
+}
+
+.title{
+    width: 100%;
+    display: inline-block;
+    margin: 40px 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+#firstbanner{
+    background-image: url(../Assets/Images/bg-pic.jpg);
+    background-size: cover;
+}
+
+nav{
+    margin-top: 28px;
+    margin-right: 5px;
+}
+
+
