@@ -15,3 +15,9 @@ for(let i=1; i<=10; i++){
 // 2 X 8 = 16
 // 2 X 9 = 18
 // 2 X 10 = 20
+
+// 2nd way:
+
+for(let i=1; i<=20; i=i+2){
+    console.log(i)
+}
