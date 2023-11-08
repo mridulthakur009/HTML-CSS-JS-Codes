@@ -33,16 +33,23 @@ header {
 }
 
 #profile {
-    background-color: aqua;
     position: absolute;
-    top: calc(100% + 10px);
-    padding: 2px 5px;
-
+    top: calc(100% + 16px);
+    padding: 2px 10px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid #aeaeae;
 }
 
 ul li{
     display: inline-block;
-    
+    margin: 5px 0;
+}
+
+#profile ul li a {
+    text-decoration: none;
+    color: #000;
+    text-align: end;
 }
 
 /* header css end */
@@ -51,7 +58,6 @@ ul li{
 
 .sideBar {
     display: inline-block;
-    background-color: yellowgreen;
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -64,29 +70,47 @@ ul li{
     position: sticky;
     top: 0;
     z-index: 500;
-    background-color: yellowgreen;
+    text-transform: uppercase;
     text-align: center;
-}
-
-.sideBar a {
-    display: block;
-    text-decoration: none;
-    padding: 0 0 5px 10px;
+    background: linear-gradient(to left, #ff0 , #f00);
+    /* border: 1px solid #000;
+    border-bottom: 2px solid #000; */
 }
 
 .items {
     height: 100%;
     overflow: auto;
+    background-color: #000;
 }
 
-.btnGrad {
-    background: linear-gradient(to left, yellow 50% ,red 100%);
+.items a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0 5px 10px;
+    /* border: 1px solid #000; */
 }
 
-.logoutBtn {
-    position: fixed;
-    bottom: 0;
-    left: 14px;
+/* .items a:first-child {
+    border-top: none; 
+}
+
+.items a:last-child {
+    border-bottom: 2px  solid #000;
+} */
+
+.items a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    background: linear-gradient(to left, #ff0 , #f00);
+}
+
+button:hover {
+    background-color: #1977cc;
+    color: #FFF;
 }
 /* sideBar css end */
 
@@ -128,7 +152,7 @@ ul li{
 .box {
     height: 30vh;
     width: 30vw;
-    background-color: yellowgreen;
+    background: linear-gradient(to left, #ff0 , #f00);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,8 +160,7 @@ ul li{
 }
 
 
-.abc {
-    background-color: violet;
+.firstSection {
     height: calc(100vh - 72px);
 }
 
