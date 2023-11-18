@@ -1,2 +1,0 @@
-1. W.A.P. to print from 1-10 and in the place of 5 it should be 8.
-2. 
