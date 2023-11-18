@@ -8,3 +8,11 @@ console.log(arr.length);
 
 console.log(arr[2]);
 
+//print last element  of an array:
+
+//1st way
+let lastElement = arr.length-1;
+console.log(arr[lastElement]);
+
+// 2nd way:
+console.log(arr[arr.length-1]);
