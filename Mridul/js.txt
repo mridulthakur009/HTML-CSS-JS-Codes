@@ -19,3 +19,9 @@
 		let a=20;
 	}
     	console.log(a);
+
+//Umang
+15. what is the foramt of table.
+16. print 1 to 10 wih for loop.
+17. print 1 to 10 with while loop.
+18. what is pseudo classes and elements.
