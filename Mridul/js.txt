@@ -9,3 +9,13 @@
 9. Type of CSS? its priority? 
 10. What will be the changes you will get when you place <style> tags at the top, mid, and bottom?
 11. Structure of HTML?
+//Shashank
+11. Diffrence between var,let and const. Why we should avoid using var.
+12. HTML structure of Table.
+13. How to give HTML table a title.
+14. What will be the output.
+	let a=10;
+	{
+		let a=20;
+	}
+    	console.log(a);
