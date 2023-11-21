@@ -19,3 +19,6 @@
 		let a=20;
 	}
     	console.log(a);
+15. Write the table structure in html 
+16. Print series of number and skip a particular number
+17. If we apply background color two times using css which color will be applied.
