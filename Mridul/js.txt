@@ -20,8 +20,15 @@
 	}
     	console.log(a);
 
+15. Write the table structure in html 
+16. Print series of number and skip a particular number
+17. If we apply background color two times using css which color will be applied.
+
 //Umang
-15. what is the foramt of table.
-16. print 1 to 10 wih for loop.
-17. print 1 to 10 with while loop.
-18. what is pseudo classes and elements.
+18. what is the foramt of table.
+19. print 1 to 10 wih for loop.
+20. print 1 to 10 with while loop.
+21. what is pseudo classes and elements.
+
+
+
