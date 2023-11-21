@@ -3,14 +3,15 @@
 3. HTML - How to add style - roman numbers to your <li> tags?
 4. HTML: In many types, you can do the styling of <ul> li tags.
 5. What are pseudo-class and pseudo-elements?
-6. Can pseudo-class be applied to element other than <a> tag?
+6. Can pseudo-class be applied to element other than <a> tag like <div> or any other tag?
 7. Suppose there are 2 <div> tags same #id is applied to both, then which element will it target?
-8. Suppose there are 3 <div> tags same .class is applied to all, then which element will it target?
+17. If we apply background color two times using css which color will be applied.
 9. Type of CSS? its priority? 
 10. What will be the changes you will get when you place <style> tags at the top, mid, and bottom?
 11. Structure of HTML?
+
 //Shashank
-11. Diffrence between var,let and const. Why we should avoid using var.
+11. Difference between var,let and const. Why we should avoid using var.
 12. HTML structure of Table.
 13. How to give HTML table a title.
 14. What will be the output.
@@ -20,13 +21,14 @@
 	}
     	console.log(a);
 
+//Deepak
 15. Write the table structure in html 
 16. Print series of number and skip a particular number
 17. If we apply background color two times using css which color will be applied.
 
 //Umang
-18. what is the foramt of table.
-19. print 1 to 10 wih for loop.
+18. what is the format of table.
+19. print 1 to 10 with for loop.
 20. print 1 to 10 with while loop.
 21. what is pseudo classes and elements.
 
