@@ -1,10 +1,11 @@
 1. JS - W.A.P. to print from 1-10 and in the place of 5 it should be 8.
 2. HTML - How can you modify styles of <ul> and <li> tags?
 3. HTML - How to add style - roman numbers to your <li> tags?
-4. HTML: In many types you can do styling of <ul> li tags?
-5. What is pseudo class and pseudo elements?
-6. Can pseudo class be applied to element other than <a> tag?
+4. HTML: In many types, you can do the styling of <ul> li tags.
+5. What are pseudo-class and pseudo-elements?
+6. Can pseudo-class be applied to element other than <a> tag?
 7. Suppose there are 2 <div> tags same #id is applied to both, then which element will it target?
 8. Suppose there are 3 <div> tags same .class is applied to all, then which element will it target?
 9. Type of CSS? its priority? 
-10. What will be the changes you will get when you place <style> tags at top, mid, bottom?
+10. What will be the changes you will get when you place <style> tags at the top, mid, and bottom?
+11. Structure of HTML?
