@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ditsdev40\\Desktop\\ASP.NET\\ASP.NET Programs\\ASP.NET Programs.csproj",
+      "projectUniqueName": "C:\\Users\\Ditsdev40\\Desktop\\GitHub Projects\\HTML-CSS-JS-Codes\\Mridul\\ASP.NET\\ASP.NET Programs.csproj",
       "projectName": "ASP.NET Programs",
-      "projectPath": "C:\\Users\\Ditsdev40\\Desktop\\ASP.NET\\ASP.NET Programs\\ASP.NET Programs.csproj",
+      "projectPath": "C:\\Users\\Ditsdev40\\Desktop\\GitHub Projects\\HTML-CSS-JS-Codes\\Mridul\\ASP.NET\\ASP.NET Programs.csproj",
       "packagesPath": "C:\\Users\\Ditsdev40\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ditsdev40\\Desktop\\ASP.NET\\ASP.NET Programs\\obj\\",
+      "outputPath": "C:\\Users\\Ditsdev40\\Desktop\\GitHub Projects\\HTML-CSS-JS-Codes\\Mridul\\ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
