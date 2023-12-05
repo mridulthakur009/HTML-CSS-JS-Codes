@@ -1,0 +1,14 @@
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.AssemblyInfoInputs.cache
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.AssemblyInfo.cs
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.csproj.CoreCompileInputs.cache
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\bin\Debug\net8.0\ASP.NET Programs.exe
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\bin\Debug\net8.0\ASP.NET Programs.deps.json
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\bin\Debug\net8.0\ASP.NET Programs.runtimeconfig.json
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\bin\Debug\net8.0\ASP.NET Programs.dll
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\bin\Debug\net8.0\ASP.NET Programs.pdb
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.dll
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\refint\ASP.NET Programs.dll
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.pdb
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ASP.NET Programs.genruntimeconfig.cache
+C:\Users\Ditsdev40\Desktop\ASP.NET\ASP.NET Programs\obj\Debug\net8.0\ref\ASP.NET Programs.dll
