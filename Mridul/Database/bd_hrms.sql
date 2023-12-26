@@ -137,3 +137,95 @@ create table tbl_emp_details (
 	edited_by varchar(25),
 	edited_time integer,
 )
+create database HumanResourceManagementSystem
+use HumanResourceManagementSystem
+
+create table Roles(
+					RoleID int primary key, 
+					RoleName varchar(30) unique, 
+					RolePermissions varchar(150), 
+					RoleDescription varchar(250)
+					);
+
+create table EmployeeLeave(
+							EmployeeID char(9),
+							present char(1)
+							);
+create table AttendanceType(
+							AttendanceID int primary key,
+							Leave int,
+							LeaveWithoutPay char(1)
+							)
+
+create table EmployeeStatus(
+					EmployeeID char(9),
+					AttandanceType varchar(20)
+					)
+
+create table LeaveType(
+					LeaveID int primary key,
+					LeaveType varchar(20),
+					present,
+					EarnedLeave ,
+					CasualLeave,
+					ShortLeave,
+					HalfDay,
+					CompensatoryLeave,
+					MedicalLeave,
+					MaternityLeave,
+					)
+
+
+create table tbl_roles_and_permission 
+(
+	role_id int,
+	user_name varchar(30),
+	password varchar(64),
+	emp_id integer,
+	role_name varchar(30),
+	role_discription varchar(30),
+	role_permission varchar(30),
+	primary key (role_id)
+)
+
+create table tbl_emp_sal 
+(
+	id int,
+	emp_id char(9) unique not null,
+	total_salary decimal(10,2),
+	base_salary decimal(10,2),
+	bonus decimal(10,2),
+	deduction decimal(10,2),
+	travel_allowance decimal(10,2),
+	medical_allowance decimal(10,2),
+	overtime_bonus decimal(10,2),
+	shift_allowance decimal(10,2),
+	primary key (id) 
+)
+
+
+create table tbl_company_policies 
+(
+	title varchar(50) not null,
+	description varchar(300)
+)
+
+create table tbl_leaves 
+(
+	id int,
+	emp_id char(9),
+	available_leaves int,
+	earned_leave int,
+	annual_leave int,
+	casual_leave int,
+	primary key (id)
+)
+
+
+create table Designation 
+(
+	DesgID int primary key,
+	Designation varchar(20) not null,
+)
+
+
