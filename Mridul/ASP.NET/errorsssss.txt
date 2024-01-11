@@ -1,0 +1,1 @@
+System.Data.SqlClient.SqlException: 'Procedure or function 'createEmployee' expects parameter '@techSkills', which was not supplied.'
