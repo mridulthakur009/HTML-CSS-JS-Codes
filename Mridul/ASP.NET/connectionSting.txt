@@ -1,11 +1,12 @@
-<<<<<<< HEAD
+
 Data Source=DESKTOP-TUED6VO\SQLEXPRESS;Initial Catalog=testDB;Integrated Security=True
-=======
+
 Data Source=DESKTOP-TUED6VO\SQLEXPRESS;Initial Catalog=testDB;Integrated Security=True
 
 Errors:
  CS7036: There is no argument given that corresponds to the required formal parameter 'empNo' of 'EmployeeDetails.addData(int, string, string, string)'
 CS1061: 'employeedetails_aspx' does not contain a definition for 'Add' and no accessible extension method 'Add' accepting a first argument of type 'employeedetails_aspx' could be found (are you missing a using directive or an assembly reference?)
 System.InvalidOperationException: 'ExecuteNonQuery: Connection property has not been initialized
+
 System.Data.SqlClient.SqlException: 'Incorrect syntax near '@Address'.'
->>>>>>> f6b2c6358072549c112323e264a102d660dc4e35
+
