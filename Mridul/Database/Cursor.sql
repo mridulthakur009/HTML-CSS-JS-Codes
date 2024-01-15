@@ -45,3 +45,12 @@ print 'Employee is: ' + cast(@emp_id as varchar(50)) + '   ' + @emp_name
 --FETCH RELATIVE -2 FROM myCursor  --Position of row in resultant of ABSOLUTE + RELATIVE(Can be +ve or -ve)
 CLOSE myCursor
 deallocate myCursor
+
+
+DECLARE myCursorsss CURSOR 
+FOR 
+SELECT * FROM employee
+open myCursorsss
+FETCH NEXT FROM myCursorsss
+close  myCursorsss
+deallocate myCursorsss
