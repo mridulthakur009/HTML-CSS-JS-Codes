@@ -1,0 +1,37 @@
+storedP @CDVID
+
+
+DELCARE @CDVID INT
+
+DECLARE myCursor CURSOR
+FOR
+Select CDVID from DocumentsTemp1
+
+OPEN myCursor
+FETCH NEXT FROM myCursor INTO @CDVID
+
+WHILE @@FETCH_STATUS=0
+BEGIN
+EXECUTE storedP @CDVID
+END
+CLOSE myCursor
+
+DEALLOCATE myCursor
+
+
+-----------------------------------
+DECLARE myCursor CURSOR
+FOR
+Select [currentdocumentversionid],documentid,clientid from DocumentsTemp1
+
+OPEN myCursor
+
+FETCH NEXT FROM myCursor
+
+WHILE @@FETCH_STATUS=0
+
+FETCH NEXT FROM myCursor
+
+CLOSE myCursor
+
+DEALLOCATE myCursor
