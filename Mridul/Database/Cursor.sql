@@ -31,26 +31,57 @@
 --deallocate myCursor
 
 --With Cursor variables:
-DECLARE myCursor CURSOR SCROLL FOR
-SELECT EmployeeNo, FirstName FROM Employees
-declare @emp_id int, @emp_name varchar(50)
-Open myCursor
-FETCH FIRST FROM myCursor INTO @emp_id, @emp_name	     --1st row from the result
-print 'Employee is: ' + cast(@emp_id as varchar(50)) + '   ' + @emp_name
-FETCH NEXT FROM myCursor	     --Next row from Above Operation
-print 'Employee is: ' + cast(@emp_id as varchar(50)) + '   ' + @emp_name
---FETCH LAST FROM myCursor	     --Last row
---FETCH PRIOR FROM myCursor	     --Preceding row of the above Operation
---FETCH ABSOLUTE 5 FROM myCursor   --Position of row at 4th position
---FETCH RELATIVE -2 FROM myCursor  --Position of row in resultant of ABSOLUTE + RELATIVE(Can be +ve or -ve)
+--DECLARE myCursor CURSOR SCROLL FOR
+--SELECT EmployeeNo, FirstName FROM Employees
+--declare @emp_id int, @emp_name varchar(50)
+--Open myCursor
+--FETCH FIRST FROM myCursor INTO @emp_id, @emp_name	     --1st row from the result
+--print 'Employee is: ' + cast(@emp_id as varchar(50)) + '   ' + @emp_name
+--FETCH NEXT FROM myCursor	     --Next row from Above Operation
+--print 'Employee is: ' + cast(@emp_id as varchar(50)) + '   ' + @emp_name
+----FETCH LAST FROM myCursor	     --Last row
+----FETCH PRIOR FROM myCursor	     --Preceding row of the above Operation
+----FETCH ABSOLUTE 5 FROM myCursor   --Position of row at 4th position
+----FETCH RELATIVE -2 FROM myCursor  --Position of row in resultant of ABSOLUTE + RELATIVE(Can be +ve or -ve)
+--CLOSE myCursor
+--deallocate myCursor
+
+
+--DECLARE myCursorsss CURSOR 
+--FOR 
+--SELECT * FROM employee
+--open myCursorsss
+--FETCH NEXT FROM myCursorsss
+--close  myCursorsss
+--deallocate myCursorsss
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+DECLARE @currentdocumentversionid INT
+
+DECLARE myCursor CURSOR
+FOR
+Select top 5000 currentdocumentversionid from DocumentsTemp1
+
+OPEN myCursor
+FETCH NEXT FROM myCursor INTO @currentdocumentversionid
+
+WHILE @@FETCH_STATUS=0
+BEGIN
+EXECUTE ssp_PostSignatureUpdateCaliforniaCalOMSUpadteDischarge  @currentdocumentversionid
+FETCH NEXT FROM myCursor INTO @currentdocumentversionid
+
+END
 CLOSE myCursor
-deallocate myCursor
 
+DEALLOCATE myCursor
 
-DECLARE myCursorsss CURSOR 
-FOR 
-SELECT * FROM employee
-open myCursorsss
-FETCH NEXT FROM myCursorsss
-close  myCursorsss
-deallocate myCursorsss
+------------------------------------------------------------------------------------------
+
+IF EXISTS ( SELECT  *
+            FROM    sys.tables
+            WHERE   name = 'DocumentsTemp1' )
+    DROP TABLE DocumentsTemp1
+
+	select * from DocumentsTemp1
+

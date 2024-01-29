@@ -35,3 +35,23 @@ FETCH NEXT FROM myCursor
 CLOSE myCursor
 
 DEALLOCATE myCursor
+
+-----------------------------------
+DECLARE @currentdocumentversionid INT
+
+DECLARE myCursor CURSOR
+FOR
+Select currentdocumentversionid from DocumentsTemp1
+
+OPEN myCursor
+FETCH NEXT FROM myCursor INTO @currentdocumentversionid
+
+WHILE @@FETCH_STATUS=0
+BEGIN
+EXECUTE ssp_PostSignatureUpdateCaliforniaCalOMSUpadteDischarge  @currentdocumentversionid
+FETCH NEXT FROM myCursor INTO @currentdocumentversionid
+
+END
+CLOSE myCursor
+
+DEALLOCATE myCursor
