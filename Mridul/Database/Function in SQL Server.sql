@@ -106,8 +106,3 @@ BEGIN
 	return
 END
 
-select * from [dbo].[fn_GetStudentsByGender]('M')
-select * from [dbo].[fn_GetStudentsByGender]('F')
-
-select * from employees
-insert into employees values(2,'1997-9-20','JK','Thakur','M','2023-10-18'),(3,'1999-9-20','JS','Kaur','F','2023-10-18')
