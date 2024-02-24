@@ -58,7 +58,7 @@ order by salary;
  
  INSERT INTO departments_dup SELECT * FROM departments;
  
-# /////////////////////////////////////////////////////////////////////////////////////////////////;
+ /////////////////////////////////////////////////////////////////////////////////////////////////;
  
  ALTER TABLE departments_dup
 
@@ -110,7 +110,6 @@ SELECT e.first_name, e.last_name, e.hire_date, t.title from employees e join tit
 last_name = 'Markovitch' order by e.emp_no;
 
 select e.*,d.* from employees e cross join  departments d where e.emp_no <10011 order by e.emp_no, d.dept_no;
-
 
 #JOIN more than 2 tables
 
