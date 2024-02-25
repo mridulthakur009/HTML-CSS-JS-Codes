@@ -6,9 +6,10 @@ as
 BEGIN
 return 'Welcome to the 1st function'
 END
-
 --Execute Scalar function:
 select dbo.showMessage();
+
+-----------------------------------------------------------------------------------------------------------------------
 
 --Scalar function with single parameter
 CREATE FUNCTION squareOfNo(@num1 AS INT)
@@ -20,6 +21,8 @@ END
 
 SELECT dbo.squareOfNo(5);
 
+-------------------------------------------------------------------------------------------------------------
+
 --Scalar function with multiple parameter
 CREATE FUNCTION BODMAS(@a AS INT,@b AS INT, @c AS INT, @d AS INT)
 RETURNS INT
@@ -28,9 +31,9 @@ BEGIN
 	RETURN (@a+@b-@c*@d+@c/@a)
 END
 
-
 SELECT DBO.BODMAS(61,10,2,6);
 
+------------------------------------------------------------------------------------------------------------------
 
 --Alter a function:
 ALTER FUNCTION squareOfNo(@num AS INT)
@@ -42,12 +45,14 @@ END
 
 SELECT DBO.squareOfNo(4)
 
+--------------------------------------------------------------------------------------------------------------
 --drop a function
+---------------------------------------------------------------------------------------------------------------
 
-DROP FUNCTION DBO.showMessage; --We don't add parentheses when dropping a funcition.
+DROP FUNCTION DBO.showMessage; --We don't add parentheses when dropping a function.
 
 
---Checking thhe age of Voter:
+--Checking the age of Voter:
 
 ALTER FUNCTION checkVoterAge(@age as int)
 RETURNS VARCHAR(100)
@@ -67,8 +72,10 @@ END
 
 SELECT DBO.checkVoterAge(25)
 
-
+----------------------------------------
 --FUNCTIONS inside a FUNCTION
+----------------------------------------
+
 CREATE FUNCTION mySysDate()
 RETURNS datetime
 AS
@@ -78,7 +85,9 @@ END
 
 SELECT DBO.mySysDate();
 
---Inline Table Valued Function
+--------------------------------
+--Inline Table Valued Function--
+--------------------------------
 
 --FUNCTION without a parameter
 CREATE FUNCTION fn_GetStudents()
@@ -88,7 +97,9 @@ RETURN (SELECT * FROM employees)
 
 SELECT * FROM dbo.fn_GetStudents();
 
---FUNCTION with a parameter
+--------------------------------
+--FUNCTION with a parameter-----
+--------------------------------
 
 CREATE FUNCTION fn_GetStudentsWithAge(@birthdate date)
 returns TABLE
@@ -97,12 +108,15 @@ RETURN (SELECT * FROM employees WHERE birth_date >= @birthdate)
 
 SELECT * FROM DBO.fn_GetStudentsWithAge(30);
 
---Multi-Statement Table Valued Functions
+-------------------------------------------
+--Multi-Statement Table Valued Functions---
+-------------------------------------------
+
 CREATE FUNCTION fn_GetStudentsByGender(@gender VARCHAR(20))
 RETURNS @myTable TABLE (employee_no INT, Name VARCHAR(20), gender CHAR(1))
 BEGIN
 	INSERT INTO @myTable
-	SELECT emp_no,first_name,gender FROM employees WHERE gender = @gender
+	SELECT emp_no, first_name, gender FROM employees WHERE gender = @gender
 	return
 END
 
