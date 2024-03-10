@@ -26,6 +26,8 @@ SELECT * FROM [Time];
 
 END
 
+
+
 CREATE PROCEDURE sp_getSlot
 AS  
 BEGIN
@@ -67,3 +69,36 @@ SELECT * FROM Appointment
  
 
 sp_help Appointment
+
+
+Modify PROCEDURE sp_TwoHour
+@ad DATE,
+@sid int,
+@tid int
+AS
+BEGIN
+
+INSERT INTO Appointment(AppointmentDate,SlotId,TimeId) VALUES(@ad,@sid,@tid);
+INSERT INTO Appointment(AppointmentDate,SlotId,TimeId) VALUES(@ad,@sid,@tid+1)
+
+END
+
+sp_help Appointment
+select * from Appointment
+
+INSERT INTO Appointment(AppointmentDate,SlotId,TimeId) VALUES('2024-02-28',2,2);
+INSERT INTO Appointment(AppointmentDate,SlotId,TimeId) VALUES('2024-02-28',2,2+1)
+
+DELETE FROM Appointment
+
+CREATE TABLE Appointment1(
+Appointmentid int primary key IDENTITY,
+AppointmentDate DATE,
+SlotId int FOREIGN KEY REFERENCES [TimeSlot](SlotId),TimeId int FOREIGN KEY REFERENCES [Time](TimeId)
+)
+
+CREATE TABLE Appointment2(
+Appointmentid int primary key IDENTITY,
+AppointmentDate DATE,
+SlotId int FOREIGN KEY REFERENCES [TimeSlot](SlotId),TimeId int FOREIGN KEY REFERENCES [Time](TimeId)
+)
